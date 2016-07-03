@@ -368,7 +368,7 @@ namespace ClientCard
                             //запрос для создания клиента
                             if (checkEdit3.Checked)
                             {
-                                sqlText = "INSERT INTO " + textEdit10.Text + ".CLIENTS (ID,CLASSIFCLIENT,SUR_NAME,PATRONYMIC,INN,PASSPORT,ACCOUNT_TYPE,ALLOW_PAYCASH,ACTIVE,VERSION,DELETED) " +
+                                sqlText = "INSERT INTO " + textEdit10.Text + ".CLIENTS (ID,CLASSIFCLIENT,SUR_NAME,PATRONYMIC,INN,PASSPORT,ALLOW_PAYCASH,ACTIVE,VERSION,DELETED) " +
                                     "VALUES ('" + idClient + "',";
                                 if (this.gridLookUpEdit2.EditValue == null)
                                 {
@@ -378,7 +378,7 @@ namespace ClientCard
                                 {
                                     sqlText = sqlText + this.gridLookUpEdit2.EditValue.ToString() + ",'";
                                 }
-                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,NULL,NULL,0,";
+                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,NULL,NULL,";
                                 switch (this.radioGroup1.SelectedIndex)
                                 {
                                     case 0:
