@@ -120,47 +120,46 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="simpleButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAI3RFWHRUaXRsZQBDYW5jZWw7
-        U3RvcDtFeGl0O0JhcnM7UmliYm9uO0yWlrIAAADMSURBVDhPpZPBDcIwEAQphUL8TllI/EkV9AHilXYi
-        UQDcWGy0OS6REI9R8Pp25TubQ2stMwRjMAXzB36jsbeq98UxuATP4LUBe9RQuwpAuAaVqYLaHqIAUr3g
-        kdaVhqcH0Jcf+xyg893T8AyIDEfiPUATGGQW1Kh+RGDCEuAUuMFhz2snRK7JRahCshnmrYB8bPD+RQ/I
-        LVRmkUN6C3tD5Ni5na8h5muUwXuutOUaIT+kW1pX2vKQ4O+nrBBSvZ0Me9R0M3iA+OHv3A5vz6hLcBW2
-        Hp0AAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAjdEVYdFRpdGxlAENhbmNlbDtTdG9wO0V4aXQ7QmFy
+        cztSaWJib247TJaWsgAAAMxJREFUOE+lk8ENwjAQBCmFQvxOWUj8SRX0AeKVdiJRANxYbLQ5LpEQj1Hw
+        +nblO5tDay0zBGMwBfMHfqOxt6r3xTG4BM/gtQF71FC7CkC4BpWpgtoeogBSveCR1pWGpwfQlx/7HKDz
+        3dPwDIgMR+I9QBMYZBbUqH5EYMIS4BS4wWHPaydErslFqEKyGeatgHxs8P5FD8gtVGaRQ3oLe0Pk2Lmd
+        ryHma5TBe6605RohP6RbWlfa8pDg76esEFK9nQx71HQzeID44e/cDm/PqEtwFbYenQAAAABJRU5ErkJg
+        gg==
 </value>
   </data>
   <data name="simpleButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAG3RFWHRUaXRsZQBOZXh0O1Bs
-        YXk7QXJyb3c7UmlnaHQW5A6uAAAAdklEQVQ4T6WMwQnAMAwDM5hnK3Ry14aqJJIeDXkcIcfJIzOPsHIH
-        K5uIuIp+F7gTASrOQo5wJwJU3AfkCHciwDuWI9yJANN4OcKdCEDj7wh3y2fGjI8P3K4TAXhctJNOBHDj
-        hjsRwI0b7kQAN264E7GLlf/J8QDyxn65FhPSCQAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAbdEVYdFRpdGxlAE5leHQ7UGxheTtBcnJvdztSaWdo
+        dBbkDq4AAAB2SURBVDhPpYzBCcAwDAMzmGcrdHLXhqokkh4NeRwhx8kjM4+wcgcrm4i4in4XuBMBKs5C
+        jnAnAlTcB+QIdyLAO5Yj3IkA03g5wp0IQOPvCHfLZ8aMjw/crhMBeFy0k04EcOOGOxHAjRvuRAA3brgT
+        sYuV/8nxAPLGfrkWE9IJAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="simpleButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAIXRFWHRUaXRsZQBBcHBseTtP
-        SztDaGVjaztCYXJzO1JpYmJvbjtkY8hoAAAAxElEQVQ4T6WT0Q2EIBBELcVC+LYsE//PKizGdkyuAG7f
-        RszArZjLfbwIy8wEFhxSSi2TsRq7cZwwpsZapdfJaLyMt5FvYA0N2iqAwmZEpgi0HlICSI2EPfB4AOfq
-        bVtZZIxnIoDmqOiOJeeMXmsrBTqsxQg3BwE7Ba5Ji7pNn4t5btaOr4BTWEJ6ZvCA6ghieDKDH6Ft4lyM
-        D2bwJkbX6CF8m7pyXSNED6lnhushwWj89ZRLCKm9V8kaGjeDBhR++J3T8AEmyYfo1Q1gZgAAAABJRU5E
-        rkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAhdEVYdFRpdGxlAEFwcGx5O09LO0NoZWNrO0JhcnM7
+        UmliYm9uO2RjyGgAAADESURBVDhPpZPRDYQgEEQtxUL4tiwT/88qLMZ2TK4Abt9GzMCtmMt9vAjLzAQW
+        HFJKLZOxGrtxnDCmxlql18lovIy3kW9gDQ3aKoDCZkSmCLQeUgJIjYQ98HgA5+ptW1lkjGcigOao6I4l
+        54xeaysFOqzFCDcHATsFrkmLuk2fi3lu1o6vgFNYQnpm8IDqCGJ4MoMfoW3iXIwPZvAmRtfoIXybunJd
+        I0QPqWeG6yHBaPz1lEsIqb1XyRoaN4MGFH74ndPwASbJh+jVDWBmAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="pictureEdit1.EditValue" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAKHRFWHRUaXRsZQBEb2N1bWVu
-        dGF0aW9uO0hlbHA7UXVlc3Rpb247SW5kZXg7bzw1dwAAAPJJREFUOE+lksENgjAUhjsLK3jlSNiABTiY
-        OIGRBcosHUDiDs7CjZOJtd9LaWhp0cTDp4/+7//TvlZZayOMMQ+t9dL3/bttWwvUrKGl/aGYpvtlHPXS
-        NI2t6zoLGj30RgEsDMPtlTPloHcNkQBSc41H4JEAzlXYdkUDuLpLNDkOXsVwUtEhZvd/dnS+vnotgFcx
-        4VRwjB7q2Qec/HcAr+KaUiHBbHYTaXi/BTy9uXLMm3VBAgpHEDD7gJ0Z5AiFIf6EDPHgGrc72GnhGmko
-        PaSjgPCQ+Pn7Ka8hpJaOA2j0rOYoYIVzMRwmzDUBNWtocb9VH1GaCYOcF7a5AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAodEVYdFRpdGxlAERvY3VtZW50YXRpb247SGVscDtR
+        dWVzdGlvbjtJbmRleDtvPDV3AAAA8klEQVQ4T6WSwQ2CMBSGOwsreOVI2IAFOJg4gZEFyiwdQOIOzsKN
+        k4m130tpaGnRxMOnj/7v/9O+VllrI4wxD6310vf9u21bC9SsoaX9oZim+2Uc9dI0ja3rOgsaPfRGASwM
+        w+2VM+Wgdw2RAFJzjUfgkQDOVdh2RQO4uks0OQ5exXBS0SFm9392dL6+ei2AVzHhVHCMHurZB5z8dwCv
+        4ppSIcFsdhNpeL8FPL25csybdUECCkcQMPuAnRnkCIUh/oQM8eAatzvYaeEaaSg9pKOA8JD4+fspryGk
+        lo4DaPSs5ihghXMxHCbMNQE1a2hxv1UfUZoJg5wXtrkAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="toolTipItem2.Text" xml:space="preserve">
+  <data name="toolTipItem1.Text" xml:space="preserve">
     <value>Диапазон карт указывается пользователем.
 
 При записи используется конвертер Стандартный импорт 2 (БД конвертера назвать IMPORT2). Version = 0 в таблице SIGNAL.

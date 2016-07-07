@@ -326,7 +326,7 @@ namespace ClientCard
                 try
                 {
                     //очищаем все необходимые таблицы (с версией = 0)
-                    string[] tables = { "CLIENTS", "CARDS", "CARD_CLIENT", "DISC_STD_CLIENTS", "SIGNAL" };
+                    string[] tables = { "CLIENTS", "CARDS", "CARD_CLIENT", "SIGNAL" };
                     string sqlTextTruncate;
                     MySqlCommand myCommandTruncate;
                     foreach (string t in tables)
@@ -461,18 +461,18 @@ namespace ClientCard
                             myCommand.ExecuteNonQuery();
 
                             //запрос на создание связи клиентов со скидками
-                            if (checkEdit5.Checked)
-                            {
-                                if (checkEdit3.Checked)
-                                {
-                                    sqlText = "INSERT INTO " + textEdit10.Text + ".DISC_STD_CLIENTS (DISCOUNT_TYPE,CLIENT,MODIFICATOR," +
-                                        "VERSION) VALUES (" + this.gridLookUpEdit3.EditValue.ToString() + ",'" + idClient + "','-1%',0)";
+                            //if (checkEdit5.Checked)
+                            //{
+                            //    if (checkEdit3.Checked)
+                            //    {
+                            //        sqlText = "INSERT INTO " + textEdit10.Text + ".DISC_STD_CLIENTS (DISCOUNT_TYPE,CLIENT,MODIFICATOR," +
+                            //            "VERSION) VALUES (" + this.gridLookUpEdit3.EditValue.ToString() + ",'" + idClient + "','-1%',0)";
 
-                                    //XtraMessageBox.Show(sqlText);
-                                    myCommand = new MySqlCommand(sqlText, myConnection);
-                                    myCommand.ExecuteNonQuery();
-                                }
-                            }
+                            //        //XtraMessageBox.Show(sqlText);
+                            //        myCommand = new MySqlCommand(sqlText, myConnection);
+                            //        myCommand.ExecuteNonQuery();
+                            //    }
+                            //}
 
                             idCard++;
 

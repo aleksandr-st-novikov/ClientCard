@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(main));
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.ToolTipItem toolTipItem2 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.ToolTipItem toolTipItem1 = new DevExpress.Utils.ToolTipItem();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.gridLookUpEdit2 = new DevExpress.XtraEditors.GridLookUpEdit();
@@ -566,6 +566,7 @@
             this.groupControl5.Controls.Add(this.labelControl13);
             this.groupControl5.Controls.Add(this.gridLookUpEdit3);
             this.groupControl5.Controls.Add(this.checkEdit5);
+            this.groupControl5.Enabled = false;
             this.groupControl5.Location = new System.Drawing.Point(381, 241);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(350, 83);
@@ -574,6 +575,7 @@
             // 
             // labelControl13
             // 
+            this.labelControl13.Enabled = false;
             this.labelControl13.Location = new System.Drawing.Point(53, 50);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(38, 13);
@@ -582,6 +584,7 @@
             // 
             // gridLookUpEdit3
             // 
+            this.gridLookUpEdit3.Enabled = false;
             this.gridLookUpEdit3.Location = new System.Drawing.Point(97, 47);
             this.gridLookUpEdit3.Name = "gridLookUpEdit3";
             this.gridLookUpEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -616,6 +619,7 @@
             // 
             // checkEdit5
             // 
+            this.checkEdit5.Enabled = false;
             this.checkEdit5.Location = new System.Drawing.Point(95, 22);
             this.checkEdit5.Name = "checkEdit5";
             this.checkEdit5.Properties.Caption = "Привязать к скидке";
@@ -633,12 +637,12 @@
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Size = new System.Drawing.Size(28, 23);
-            toolTipTitleItem2.Text = "Описание работы:";
-            toolTipItem2.LeftIndent = 6;
-            toolTipItem2.Text = resources.GetString("toolTipItem2.Text");
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            superToolTip2.Items.Add(toolTipItem2);
-            this.pictureEdit1.SuperTip = superToolTip2;
+            toolTipTitleItem1.Text = "Описание работы:";
+            toolTipItem1.LeftIndent = 6;
+            toolTipItem1.Text = resources.GetString("toolTipItem1.Text");
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            superToolTip1.Items.Add(toolTipItem1);
+            this.pictureEdit1.SuperTip = superToolTip1;
             this.pictureEdit1.TabIndex = 17;
             // 
             // labelControl14
