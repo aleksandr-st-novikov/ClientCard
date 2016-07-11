@@ -24,7 +24,7 @@ namespace ClientCard
         private void main_Load(object sender, EventArgs e)
         {
             DisableAll();
-            labelControl14.Text = "Версия: " +  System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            labelControl14.Text = "Версия: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
 
         private void Reconnect()
@@ -163,7 +163,7 @@ namespace ClientCard
 
         private void ReadAll()
         {
-            this.textEdit1.Properties.ReadOnly = true;
+            this.comboBoxEdit1.Properties.ReadOnly = true;
             this.textEdit8.Properties.ReadOnly = true;
             this.textEdit9.Properties.ReadOnly = true;
             this.textEdit10.Properties.ReadOnly = true;
@@ -176,7 +176,7 @@ namespace ClientCard
 
         private void UnReadAll()
         {
-            this.textEdit1.Properties.ReadOnly = false;
+            this.comboBoxEdit1.Properties.ReadOnly = false;
             this.textEdit8.Properties.ReadOnly = false;
             this.textEdit9.Properties.ReadOnly = false;
             this.textEdit10.Properties.ReadOnly = false;
@@ -233,8 +233,8 @@ namespace ClientCard
 
         private void textEdit8_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            textEdit4.Text = textEdit8.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0');
-            textEdit2.Text = textEdit1.Text + textEdit4.Text;
+            textEdit4.Text = textEdit8.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0');
+            textEdit2.Text = comboBoxEdit1.Text + textEdit4.Text;
             //if (String.IsNullOrEmpty(textEdit9.Text))
             //{
             //    textEdit9.Text = textEdit8.Text;
@@ -244,7 +244,7 @@ namespace ClientCard
 
         private void textEdit9_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            textEdit5.Text = textEdit9.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0');
+            textEdit5.Text = textEdit9.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0');
             //if (String.IsNullOrEmpty(textEdit8.Text))
             //{
             //    textEdit8.Text = textEdit9.Text;
@@ -336,7 +336,7 @@ namespace ClientCard
                         myCommandTruncate = new MySqlCommand(sqlTextTruncate, myConnection);
                         myCommandTruncate.ExecuteNonQuery();
                     }
-                    
+
                     //удаление записи в таблице signal с версией 0
                     //sqlTextTruncate = "DELETE FROM " + textEdit10.Text + ".SIGNAL WHERE VERSION = 0";
                     //myCommandTruncate = new MySqlCommand(sqlTextTruncate, myConnection);
@@ -378,7 +378,7 @@ namespace ClientCard
                                 {
                                     sqlText = sqlText + this.gridLookUpEdit2.EditValue.ToString() + ",'";
                                 }
-                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,NULL,NULL,";
+                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0') + "',NULL,NULL,NULL,";
                                 switch (this.radioGroup1.SelectedIndex)
                                 {
                                     case 0:
@@ -402,7 +402,7 @@ namespace ClientCard
                                 {
                                     sqlText = sqlText + this.gridLookUpEdit2.EditValue.ToString() + ",'";
                                 }
-                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,NULL,NULL,NULL,";
+                                sqlText = sqlText + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0') + "',NULL,NULL,NULL,NULL,";
                                 switch (this.radioGroup1.SelectedIndex)
                                 {
                                     case 0:
@@ -433,12 +433,12 @@ namespace ClientCard
                             if (checkEdit3.Checked)
                             {
                                 sqlText = "INSERT INTO " + textEdit10.Text + ".CARDS (ID,START_CARD_CODE,STOP_CARD_CODE,ACTIVE,VERSION) VALUES (" +
-                                    idCard.ToString() + ",'" + textEdit1.Text + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,";
+                                    idCard.ToString() + ",'" + comboBoxEdit1.Text + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0') + "',NULL,";
                             }
                             else
                             {
                                 sqlText = "INSERT INTO UKMSERVER.TRM_IN_CARDS (GLOBAL_ID,ID,START_CARD_CODE,STOP_CARD_CODE,ACTIVE,VERSION) VALUES (" +
-                                    "0," + idCard.ToString() + ",'" + textEdit1.Text + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0') + "',NULL,";
+                                    "0," + idCard.ToString() + ",'" + comboBoxEdit1.Text + i.ToString().PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0') + "',NULL,";
                             }
                             sqlText = checkEdit1.Checked ? sqlText + "1,0)" : sqlText + "0,0)";
                             //XtraMessageBox.Show(sqlText);
@@ -532,7 +532,7 @@ namespace ClientCard
 
         private void textEdit1_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            textEdit2.Text = textEdit1.Text + textEdit4.Text;
+            textEdit2.Text = comboBoxEdit1.Text + textEdit4.Text;
         }
 
         private void gridLookUpEdit2_Properties_ButtonClick_1(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
@@ -575,17 +575,31 @@ namespace ClientCard
             discCheck = checkEdit5.Checked ? true : false;
         }
 
+        private void comboBoxEdit1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (comboBoxEdit1.SelectedIndex)
+            {
+                case 0:
+                    spinEdit1.Value = 15;
+                    break;
+                case 1:
+                    spinEdit1.Value = 7;
+                    break;
+            }
+
+        }
+
         private void spinEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            textEdit4.Text = textEdit8.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0');
-            textEdit2.Text = textEdit1.Text + textEdit4.Text;
+            textEdit4.Text = textEdit8.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0');
+            textEdit2.Text = comboBoxEdit1.Text + textEdit4.Text;
             //if (String.IsNullOrEmpty(textEdit9.Text))
             //{
             //    textEdit9.Text = textEdit8.Text;
             //    textEdit5.Text = textEdit8.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0');
             //}
 
-            textEdit5.Text = textEdit9.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - textEdit1.Text.Length, '0');
+            textEdit5.Text = textEdit9.Text.PadLeft(Convert.ToInt32(spinEdit1.EditValue) - comboBoxEdit1.Text.Length, '0');
             //if (String.IsNullOrEmpty(textEdit8.Text))
             //{
             //    textEdit8.Text = textEdit9.Text;
