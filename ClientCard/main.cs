@@ -581,9 +581,11 @@ namespace ClientCard
             {
                 case 0:
                     spinEdit1.Value = 15;
+                    checkEdit6.Checked = false;
                     break;
                 case 1:
                     spinEdit1.Value = 7;
+                    checkEdit6.Checked = true;
                     break;
             }
 
