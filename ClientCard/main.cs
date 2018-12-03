@@ -502,7 +502,7 @@ namespace ClientCard
                     if (checkEdit3.Checked)
                     {
                         //даем сигнал конвертеру для загрузки
-                        string sqlTxt = "INSERT INTO " + textEdit10.Text + ".SIGNAL (SIGNAL,VERSION) VALUES ('incr',0)";
+                        string sqlTxt = "INSERT INTO " + textEdit10.Text + ".SIGNAL (`SIGNAL`,`VERSION`) VALUES ('incr',0)";
                         MySqlCommand myCmd = new MySqlCommand(sqlTxt, myConnection);
                         myCmd.ExecuteNonQuery();
                     }
